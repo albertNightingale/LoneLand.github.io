@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html class="cspio">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>LoneLand</title>
+
+		<meta name="generator" content="comingsoonpage.com 1.0.0" />
+	<meta name="description" content="Online Survival Multiplayer Game">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:url" content="https://www.loneland.io" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="LoneLand" />
+	<meta property="og:description" content="Online Survival Multiplayer Game" />
+	
+	<!-- Font Awesome CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Bootstrap and default Style -->
+	 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://static.comingsoonpage.com/cspio-assets/1.0.0/style.css">
+
+
+
+	<!-- Google Fonts -->
+				<link class="gf-headline" href='https://fonts.googleapis.com/css?family=Open+Sans:700&subset=' rel='stylesheet' type='text/css'>
+						<link class="gf-text" href='https://fonts.googleapis.com/css?family=Open+Sans:400&subset=' rel='stylesheet' type='text/css'>
+		
+	
+	<!-- RTL -->
+
+
+
+		<!-- Animate CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+	
+
+
+	<!-- Calculated Styles -->
+	<style type="text/css">
+	
+	
+	
+	
+	/* Background Style */
+	html{
+		height:100%;
+			    	background: #262121;
+			}
+
+		#cspio-page{
+		background-color: rgba(0,0,0,0);
+	}
+	
+	.flexbox #cspio-page{
+			align-items: center;
+		justify-content: center;
+										}
+
+
+
+	.cspio body{
+		background: transparent;
+	}
+
+
+    /* Text Styles */
+    	    .cspio body, .cspio body p{
+	        font-family: 'Open Sans';
+			font-weight: 400;
+			font-style: ;
+	        font-size: 16px;
+	        line-height: 1.50em;
+	        	        color:#ffffff;
+	        	 	}
+
+		::-webkit-input-placeholder {
+			font-family:'Open Sans';
+			font-weight: 400;
+			font-style: ;
+		}
+		::-moz-placeholder {
+			font-family:'Open Sans';
+			font-weight: 400;
+			font-style: ;
+		} /* firefox 19+ */
+		:-ms-input-placeholder {
+			font-family:'Open Sans';
+			font-weight: 400;
+			font-style: ;
+		} /* ie */
+		:-moz-placeholder {
+			font-family:'Open Sans';
+			font-weight: 400;
+			font-style: ;
+		}
+
+    
+
+
+	    .cspio h1, .cspio h2, .cspio h3, .cspio h4, .cspio h5, .cspio h6{
+	    	        font-family: 'Open Sans';
+	    	        	        color:#ffffff;
+	        	    }
+		#cspio-headline{
+					font-family: 'Open Sans';
+			font-weight: 700;
+			font-style: ;
+					font-size: 42px;
+			color:#ffffff;
+			line-height: 1.00em;
+		}
+
+    		.cspio button{
+	        font-family: 'Open Sans';
+			font-weight: 400;
+			font-style: ;
+	    }
+    
+    /* Link Styles */
+    		.cspio a, .cspio a:visited, .cspio a:hover, .cspio a:active{
+			color: #ffffff;
+		}
+
+
+		#cspio-socialprofiles a {
+  color: #ffffff;
+}
+.cspio .btn-primary,
+.cspio .btn-primary:focus,
+.gform_button,
+#mc-embedded-subscribe,
+.mymail-wrapper .submit-button {
+  color: black;
+  text-shadow: 0 -1px 0 rgba(255,255,255,0.3);
+  background-color: #ffffff;
+  background-image: -moz-linear-gradient(top,#ffffff,#d9d9d9);
+  background-image: -ms-linear-gradient(top,#ffffff,#d9d9d9);
+  background-image: -webkit-gradient(linear,0 0,0 100%,from(#ffffff),to(#d9d9d9));
+  background-image: -webkit-linear-gradient(top,#ffffff,#d9d9d9);
+  background-image: -o-linear-gradient(top,#ffffff,#d9d9d9);
+  background-image: linear-gradient(top,#ffffff,#d9d9d9);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#d9d9d9', GradientType=0);
+  border-color: #d9d9d9 #d9d9d9 #b3b3b3;
+  border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+  *background-color: #d9d9d9;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.cspio .btn-primary:hover,
+.cspio .btn-primary:active,
+.cspio .btn-primary.active,
+.cspio .btn-primary.disabled,
+.cspio .btn-primary[disabled],
+.cspio .btn-primary:focus:hover,
+.cspio .btn-primary:focus:active,
+.cspio .btn-primary:focus.active,
+.cspio .btn-primary:focus.disabled,
+.cspio .btn-primary:focus[disabled],
+.gform_button:hover,
+.gform_button:active,
+.gform_button.active,
+.gform_button.disabled,
+.gform_button[disabled],
+#mc-embedded-subscribe:hover,
+#mc-embedded-subscribe:active,
+#mc-embedded-subscribe.active,
+#mc-embedded-subscribe.disabled,
+#mc-embedded-subscribe[disabled],
+.mymail-wrapper .submit-button:hover,
+.mymail-wrapper .submit-button:active,
+.mymail-wrapper .submit-button.active,
+.mymail-wrapper .submit-button.disabled,
+.mymail-wrapper .submit-button[disabled] {
+  background-color: #d9d9d9;
+  *background-color: #cccccc;
+}
+.cspio .btn-primary:active,
+.cspio .btn-primary.active,
+.cspio .btn-primary:focus:active,
+.cspio .btn-primary:focus.active,
+.gform_button:active,
+.gform_button.active,
+#mc-embedded-subscribe:active,
+#mc-embedded-subscribe.active,
+.mymail-wrapper .submit-button:active,
+.mymail-wrapper .submit-button.active {
+  background-color: #bfbfbf \9;
+}
+.form-control,
+.progress {
+  background-color: #ffffff;
+}
+#cspio-progressbar span,
+.countdown_section {
+  color: black;
+  text-shadow: 0 -1px 0 rgba(255,255,255,0.3);
+}
+.cspio .btn-primary:hover,
+.cspio .btn-primary:active {
+  color: black;
+  text-shadow: 0 -1px 0 rgba(255,255,255,0.3);
+  border-color: #e6e6e6;
+}
+.cspio input[type='text']:focus {
+  webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(217,217,217,0.6);
+  -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(217,217,217,0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(217,217,217,0.6);
+}
+    
+
+    #cspio-content {
+  display: none;
+  max-width: 600px;
+  background-color: #000000;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+
+        #cspio-content{
+    	background-color:transparent;
+    }
+    
+        #cspio-content{
+    	 /* display:none; */
+    }
+    
+		.cspio .progress-bar,
+.countdown_section,
+.cspio .btn-primary,
+.cspio .btn-primary:focus,
+.gform_button {
+  background-image: none;
+  text-shadow: none;
+}
+.countdown_section,
+.cspio .progress-bar {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.cspio input,
+.cspio input:focus {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+	
+		
+									
+
+	
+
+	
+	</style>
+	<!-- JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- FitVid -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fitvids/1.1.0/jquery.fitvids.min.js"></script>
+	<!-- Scripts -->
+	<script src="https://static.comingsoonpage.com/cspio-assets/1.0.0/scripts.js"></script>
+	<!-- Modernizr -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	<!-- Retina JS -->
+	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/retina.js/1.3.0/retina.min.js"></script>-->
+	<!-- Tubular -->
+	
+
+<!-- Header Scripts -->
+	
+<!-- Google Analytics -->
+</head>
+<body>
+	<div id="cspio-page">
+		<div id="cspio-content">
+						    			    <h1 id="cspio-headline">LoneLand.io</h1>			    				
+						    			    <div id="cspio-description"><p>2D Multiplayer Survival Game</p></div>			    				
+						    			    <img id="cspio-logo" src="https://static.comingsoonpage.com/3089/h0beKME9SrGZbOg6fo2V_lonelandlogo-1png.png">
+			    				
+						    			    <form id="cspio-form" action="https://www.comingsoonpage.com/v1/subscribe?3089" method="post">
+<input id="cspio-ref" name="ref" type="hidden" value="" />
+<input id="cspio-href" name="href" type="hidden" value="" />
+<input id="cspio-page_id" name="page_id" type="hidden" value="eyJpdiI6IjZ6b3RyWm1kNTBVVDZCWndpZXl5QUE9PSIsInZhbHVlIjoiTWh6djhER2dhWVA5ZEJmSEVrSTlYQT09IiwibWFjIjoiNTkwZjkwNzI4ZGQzOTYzNmYyMDk5MTQ4NjliNmU2YTJiMDhmN2Y0ZGI1MDBjNDM3M2Y4Mzk4NWY3NGI1ZWRjOSJ9" />
+<input id="cspio-comment" name="comment" type="hidden" value="" />
+					
+			<div id="cspio-field-wrapper">
+			<div class="row">
+							<div class="col-md-12"><input id="cspio-name" name="name" class="form-control input-lg form-el" type="text" placeholder="Name"/></div>
+			
+							<div class="col-md-12 seperate"><div class="input-group"><input id="cspio-email" name="email" class="form-control input-lg form-el" type="email" placeholder="Email" required/>
+				<span class="input-group-btn"><button id="cspio-subscribe-btn" type="submit" class="btn btn-lg btn-primary form-el noglow">Notify Me</button></span></div></div>
+						</div>
+			</div>
+			</form>
+<span id="cspio-privacy-policy-txt"></span>
+<script src="https://cdn.jsdelivr.net/jquery.url.parser/2.3.1/purl.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.cookie/1.4.1/jquery.cookie.min.js"></script>
+<script>
+function send_request(){
+		jQuery.ajax({
+	    url: "https://api.comingsoonpage.com/v1/subscribe",
+	    dataType: "jsonp",
+	    timeout: 7000,
+	    data: jQuery("#cspio-form").serialize(),
+	 
+	    // Work with the response
+	    success: function( response ) {
+	        //console.log( response); // server response
+	        //console.log( response.status);
+	        if(response.status == '200' || response.status == '409'){
+		        // Replace Content
+		        jQuery("#cspio-privacy-policy-txt,#cspio-description,#cspio-headline").fadeOut(200);
+		        jQuery( "#cspio-form,#cspio-countdown,#cspio-progressbar" ).fadeOut(200).promise().done(function() {
+		        	jQuery( "#cspio-form" ).replaceWith( response.html ).hide().fadeIn();
+		        });
+
+		        // Set cookie if new user and user comes back
+		        jQuery.cookie('email', $("#cspio-email").val(), { expires: 365 } );
+	    	}
+
+	    	if(response.status == '400'){
+	    		jQuery('#cspio-alert').remove();
+	    		jQuery(response.html).hide().appendTo("#cspio-field-wrapper").fadeIn();
+				//$('#cspio-field-wrapper').before(response.html).done().find('#cspio-alert').hide().fadeIn();
+	    	}
+	    	
+	        if(response.status == '403'){
+				alert(response.html);
+	    	}
+
+	    },
+	    error: function(jqXHR, textStatus, errorThrown) {
+        	alert(textStatus);
+    	}
+	});
+}
+
+$( "#cspio-subscribe-btn" ).click(function( event ) {
+	//if($("form")[0].checkValidity()){
+	event.preventDefault();
+	send_request()
+	//}
+});
+
+// Read ref param if present
+var ref = jQuery.url().param('ref');
+jQuery("#cspio-ref").val(ref);
+jQuery("#cspio-href").val(location.href);
+
+// Show Stats if user returns
+// var email = $.cookie('email');
+// if(typeof email !== "undefined"){
+// 	$('#cspio-email').val(email);
+// 	send_request();
+// }
+
+
+// Disbale Button on Submit
+jQuery(document)
+.ajaxStart(function () {
+    jQuery("#cspio-subscribe-btn").attr('disabled','disabled');
+})
+.ajaxStop(function () {
+    jQuery("#cspio-subscribe-btn").removeAttr('disabled');
+});
+
+</script>
+			    				
+						    			    			    				
+						    			    			    				
+						    			    <div id="cspio-socialprofiles">
+									<a href="https://www.facebook.com/Lonelandio-102836285315357" target="_blank"><i class="fa fa-facebook-official fa-lg"></i></a>			
+									<a href="https://www.reddit.com/r/LoneLand/" target="_blank"><i class="fa fa-github fa-lg"></i></a>			
+									<a href="https://www.youtube.com/channel/UCqGyFbYvkiKBSNNh8tglOhw" target="_blank"><i class="fa fa-youtube fa-lg"></i></a>			
+									<a href="https://twitter.com/LonelandI" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>			
+									<a href="https://www.instagram.com/loneland.io/" target="_blank"><i class="fa fa-instagram fa-lg"></i></a>			
+									<a href="https://www.pinterest.com/contactlonelandio/_created/" target="_blank"><i class="fa fa-pinterest fa-lg"></i></a>			
+								</div>
+									    				
+						    			    			    				
+						    			     			    				
+			
+		</div><!-- end of #seed-cspio-content -->
+		
+							<div id="cspio-credit">
+					<span><a target="_blank" href="https://discord.gg/6JhsJWh2ph"><img src="https://static.comingsoonpage.com/3089/INbolNsQq6jI37RKBT9a_m9IkaS4aTbOPMj1tocv5_nomocode discord.png" class="img-responsive"/></a>
+				</div>
+			
+							</div>
+
+	<script>jQuery(document).ready(function($){$("#cspio-description,#cspio-thankyoumsg").fitVids();});</script>
+
+	<!-- Animate -->
+			<script>
+	jQuery("#cspio-content").show().addClass('animated fadeIn');
+	</script>
+		
+	
+		
+	<script>
+	function resize(){
+			$('head').append("<style id='form-style' type='text/css'></style>");
+			$('#form-style').html('.cspio .input-group-btn, .cspio .input-group{display:block;width:100%;}.cspio #cspio-subscribe-btn{margin-left:0;width:100%;display:block;}.cspio .input-group .form-control:first-child, .cspio .input-group-addon:first-child, .cspio .input-group-btn:first-child>.btn, .cspio .input-group-btn:first-child>.dropdown-toggle, .cspio .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle) {border-bottom-right-radius: 4px;border-top-right-radius: 4px;}.cspio .input-group .form-control:last-child, .cspio .input-group-addon:last-child, .cspio .input-group-btn:last-child>.btn, .cspio .input-group-btn:last-child>.dropdown-toggle, .cspio .input-group-btn:first-child>.btn:not(:first-child) {border-bottom-left-radius: 4px;border-top-left-radius: 4px;}');
+	}
+	
+	$('#cspio-content').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+		var width = $('#cspio-field-wrapper').width();
+		//console.log(width);
+		if(width < 480 && width != 0){
+			resize();
+		}
+	}
+	);
+	</script>
+
+
+
+
+	
+	</body>
+</html>
+
+
+<!-- This page was generated by ComingSoonPage.com | Learn more: http://www.comingsoonpage.com -->
